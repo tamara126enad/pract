@@ -24,10 +24,35 @@
 .emo::before { content:'Happy coding :) ';}
 
 .emo:hover::before { content:'Happy coding 😊'; }
+a{position: fixed;
+background: rgb(97, 79, 53);
+color:goldenrod;
+padding: 20px;
+border-radius: 12px;}
+
+
+
+@media (min-width: 50px)and (max-width :320px) {
+    .center{width: 100px;
+    height: 100px;}
+    .emo {font-size: 10px;}
+    a {padding: 8px;
+    font-size: 8px;}
+}
+
+@media (min-width: 320px)and (max-width :390px) {
+    .center{width: 250px;
+    height: 250px;}
+    .emo {font-size: 12px;}
+    a {padding: 12px;
+    font-size: 12px;}
+}
+
 </style>
 
 </head>
 <body>
+    <a href="../index.html">Home </a>
 
 <div class="container">
     <div class="center">
