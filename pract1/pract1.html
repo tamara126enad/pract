@@ -10,7 +10,7 @@
 .container{ height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;    }
 
 .center{
     background: rgb(71, 66, 66);
@@ -19,8 +19,11 @@
     height: 400px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;    }
+
+.emo::before { content:'Happy coding :) ';}
+
+.emo:hover::before { content:'Happy coding 😊'; }
 </style>
 
 </head>
@@ -28,7 +31,7 @@
 
 <div class="container">
     <div class="center">
-        <p>Happy coding :)</p>
+        <p class="emo"></p>
      </div>
 </div>
     
