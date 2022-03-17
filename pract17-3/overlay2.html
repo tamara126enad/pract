@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Images Shaps</title>
 
     <style>
 
-.container {
-            /* display: flex;
+ .container {
+             display: flex;
             justify-content: center;
-            align-items: center; */
-            height: 100vh; }
+            align-items: center; 
+            height: 100vh; 
+}
 
 
 .shaps {
@@ -21,14 +21,22 @@
             grid-template-columns: auto auto auto;
             justify-content: center;
             align-items: center; 
-            height: 50%; 
-            } 
-.in-out{width: 90%;
-    height:90%;}
+            height: 75%; 
+         
+
+           
+            }  
+
+
+.in-out{width: 100%;
+    height:100%;
+    overflow: hidden;
+
+}
 
 img {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
         }
 
 .cir {  border-radius: 100%; 
@@ -36,92 +44,96 @@ img {
 
 
  .hexabg{background-image: url('../img/2.jpg') ;
-/* background-size: 90px 90px; */
-
+background-size: 100% 90%; 
   background-repeat: no-repeat;
-  background-origin: content-box;
 }
-.petabg1{background-image: url('../img/3.jpg');
-background-origin: padding-box;}
-.hexabg{background-image: url('../img/5.jpg');}
-.petabg1{background-image: url('../img/6.jpg');} 
+
+.petabg{background-image: url('../img/3.jpg');
+    background-size: 100% 90%; 
+  background-repeat: no-repeat;}
+
+  .hexabg1{background-image: url('../img/5.jpg');
+background-size: 100% 90%; 
+  background-repeat: no-repeat;}
+
+.petabg1{background-image: url('../img/6.jpg');
+background-size: 100% 90%; 
+  background-repeat: no-repeat;
+overflow: hidden;} 
 
 .contant{
-     display: none; 
-    width: 100px;
-    /* height: 100px; */
+     /* display: none;  */
+     visibility: hidden;
+    width: 50px;
     top:-180px;
     left:50px;
-    background-image: url('../img/6.jpg');
+    /* background-image: url('../img/6.jpg'); */
     color: #fff;
 position: relative;
-
+overflow: hidden;
 } 
 
-
 .in-out:hover>.contant {
-     display:inherit;
- background: rgba(0, 0, 0, 0.24);
+     /* display:initial; */
+     visibility: visible;
+     width:150px;
+     height: 130px;
+     background: rgba(0, 0, 0, 0.26);
+
 }
-
-
+/* 
 @media (min-width: 50px)and (max-width :320px) {
     img{width: 50px;
     height: 50px;
-border: 2px goldenrod solid;
 margin:4px;}
-    
+.shaps ,.in-out{overflow: hidden; }
+.hexabg, .hexabg1, .petabg, .petabg1 { overflow: hidden;
+    background-size:85% 38%; }
 }
+
+.contant {width: 20px; height: 20px; font-size: 10px;
+top:20px;}
 
 @media (min-width: 320px)and (max-width :400px) {
     img{width: 80px;
     height: 80px;
-    border: 2px goldenrod solid;
     margin:4px;
 }
-   
+.shaps ,.in-out{overflow: hidden;}
 }
-@media (min-width: 401px)and (max-width :430px) {
+@media (min-width: 401px)and (max-width :700px) {
    img{width: 130px;
-    height: 130px;
-    border: 2px goldenrod solid;
+    height: 150px;
+
     margin:4px;}
-    
-}          
+    .shaps,  .in-out{overflow: hidden;}
+}           */
 
 </style>
 </head>
 
 <body>
 
-
-
     <div class="container">
-        <div class="shaps">
+               <div class="shaps">
             <div class="in-out">
                 <img class="cir" src="../img/1.jpg" alt="NYC">
                    <div class="contant">
-                        <strong>circle img</strong>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <strong>circle img</strong><hr>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </div>
             </div>
 
             <div class="in-out hexabg">
                 <img class="hexa" src="../img/hexa2.png" alt="NYC">
                    <div class="contant">
-                        <strong>hexa img</strong>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <strong>hexa img</strong> <hr>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </div>
             </div>
 
             <div class="in-out petabg">
                 <img class="peta peta1" src="../img/peta2.png" alt="NYC">
                    <div class="contant">
-                        <strong>petagon img</strong>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <strong>petagon img</strong><hr>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
             </div>
 
@@ -129,9 +141,7 @@ margin:4px;}
             <div class="in-out">
                 <img class="cir" src="../img/4.jpg" alt="NYC">
                    <div class="contant">
-                        <strong>circle img</strong>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <strong>circle img</strong>  <hr> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
             </div>
 
@@ -140,9 +150,7 @@ margin:4px;}
             <div class="in-out hexabg1">
                 <img class="hexa" src="../img/hexa2.png" alt="NYC">
                    <div class="contant">
-                        <strong>hexa img</strong>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <strong>hexa img</strong>  <hr> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
             </div>
 
@@ -151,9 +159,7 @@ margin:4px;}
             <div class="in-out petabg1">
                 <img class="peta" src="../img/peta2.png" alt="NYC">
                    <div class="contant">
-                        <strong>petagon img</strong>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <strong>petagon img</strong>   <hr>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
             </div>
 
